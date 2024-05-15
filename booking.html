@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <style>
+        html{
+            background-color: rgb(253, 250, 210);
+        }
+        .si{
+            color: rgb(23, 96, 159);
+            font-size:60px ;
+            text-align: center;
+            font-family: "Sofia", sans-serif;
+            height: 320px;
+            width: 1000px;
+            margin-left: 280px;
+        }
+        .sss{
+            color: rgb(23, 96, 159);
+            font-size: 34px;
+            font-weight: 500;
+            font-family: "Trirong", serif;
+            text-align: center;
+        }
+        .n1{
+            color: rgb(23, 96, 159);
+            font-size:40px ;
+            margin-left: 20px; 
+        }
+        .full{
+            background-color: rgba(161, 211, 254, 0.573);
+            align-content: center;
+            width: 800px;
+            margin-left: 400px;
+            border-radius: 3%;
+        }
+        .button1{
+            background-color:rgb(23, 96, 159); 
+            color: rgb(253, 250, 210); 
+            padding: 9px 20px;
+            text-align: center;
+            transition-duration: 0.2s;
+            border: none;
+            font-size: 16px;
+            border-radius: 8%;
+            float: right;
+            margin-top: 20px;
+            margin-left:10px;
+            margin-right: 20px;
+            margin-bottom: 30px;
+        }
+        .button1:hover{
+            background-color:rgb(253, 250, 210);
+            color: rgb(23, 96, 159); 
+        }
+    </style>
+    <title>Book your cruise</title>
+</head>
+<body>
+    <div class="si"><br>
+        ★ Sign Up!<br><br></div>
+    <div class="sss">
+        Sign up here to be among the first to receive the latest <br>news from
+        WanderWave, including special offers<br> and last-minute cruise
+        deals. And if you change <br>your mind, you can unsubscribe at any time.<br><br>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="full">
+        <form id="signupForm" action="#" method="post">
+            <div class="n1">
+                <label for="na1"><br>Enter your First name :  </label>
+                <input type="text" id="na1" placeholder="First name" required>
+            </div>
+            <div class="n1">
+                <label for="na2"><br>Enter your Last name :  </label>
+                <input type="text" id="na2" placeholder="Last name" required>
+            </div>
+            <div class="n1">
+                <label for="na3"><br>Enter your Email :  </label>
+                <input type="email" id="na3" placeholder="Email" required>
+            </div>
+            <div class="n1">
+                <label for="na4"><br>Enter your Phone Number:  </label>
+                <input type="tel" id="na4" placeholder="Phone Number" required>
+            </div>
+            <br><br><br>
+            <div class="subt">
+                <button class="button1" type="submit">Sign Up</button>
+            </div> 
+        </form>
+        <br><br><br>
+    </div>
+    <br><br><br>
+
+    <script>
+        document.getElementById("signupForm").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+            var firstName = document.getElementById("na1").value;
+            var lastName = document.getElementById("na2").value;
+
+           
+            var confirmation = confirm("Thank you for signing up, " + firstName + " " + lastName + "!\nClick OK to proceed.");
+
+            
+            if (confirmation) {
+                window.location.href = "idk.html"; 
+            }
+        });
+    </script>
+</body>
+</html>
